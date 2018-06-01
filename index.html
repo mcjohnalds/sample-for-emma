@@ -65,5 +65,5 @@
     el: "#app"
   });
 
-  window.addEventListener("message", event =>  router.push(event.data));
+  window.addEventListener("message", event =>  console.log(event) && router.push(event.data));
 </script>
