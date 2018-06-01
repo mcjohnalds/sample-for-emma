@@ -1,0 +1,32 @@
+<!doctype html>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+  }
+
+  div {
+    width: 10rem;
+    padding: 0.5rem;
+    border: 1px solid #DDD;
+    background-color: #333;
+  }
+
+  p {
+    color: #DDD;
+    font-family: sans-serif;
+    margin: 0;
+  }
+
+  a {
+    color: #DD3;
+    display: block;
+    font-family: sans-serif;
+    margin-top: 0.5rem;
+    text-decoration: none;
+  }
+</style>
+<div>
+  <p>I live inside an iframe</p>
+  <a href="javascript:parent.postMessage('/attendance', '*')">Attendance</a>
+</div>
