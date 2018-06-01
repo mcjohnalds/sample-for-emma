@@ -37,7 +37,7 @@
     template: `
       <div>
         <p>On home page</p>
-        <iframe src="foo.html" frameborder="0"></iframe>
+        <iframe src="/sample-for-emma/foo.html" frameborder="0"></iframe>
       </div>
     `
   };
@@ -46,7 +46,7 @@
     template: `
       <div>
         <p>On attendance page</p>
-        <router-link to="/foo.html">Home</router-link>
+        <router-link to="/sample-for-emma">Home</router-link>
       </div>
     `
   };
@@ -54,9 +54,9 @@
   const router = new VueRouter({
     mode: "history",
     routes: [
-      { path: "/", component: Home },
-      { path: "/attendance", component: Attendance },
-      { path: "*", redirect: "/" }
+      { path: "/sample-for-emma", component: Home },
+      { path: "/sample-for-emma/attendance", component: Attendance },
+      { path: "*", redirect: "/sample-for-emma" }
     ]
   });
 
